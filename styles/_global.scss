@@ -1,0 +1,42 @@
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+ body{
+    margin: 0;
+    padding: 0;
+    color: $GrayishBlue;
+    font-family: $font-family;
+    font-size: $font-size-small;
+ }
+
+a, a:visited, a:hover{
+    text-decoration: none;
+}
+
+ .header__flex{
+    display: flex;
+    justify-content: space-between;
+ }
+
+//  Buttons
+.button {
+padding: 1rem 1.85rem;
+background: linear-gradient(to right,hsl(136, 65%, 51%) , hsl(192, 70%, 51%) ) ;
+color: $White;
+border-radius: 2rem;
+border: none;
+cursor: pointer;
+font-weight: 700;
+}
+
+//Visibility
+
+.hide-for-mobile{
+
+}
+
+.hide-for-desktop{
+    
+}

@@ -4,30 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/emoji.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles/style.css">
+
   <title>Frontend Mentor | Easybank landing page</title>
 </head>
 
 <body>
+
   <!-- HEADER -->
-  <header>
-    <div class="logo">
-      <img src="./images/logo.svg" alt="logo">
-    </div>
-    <ul class="navigation">
-      <li> <a href="#">Home</a></li>
-      <li> <a href="#">About</a></li>
-      <li> <a href="#">Contact</a></li>
-      <li> <a href="#">Blog</a></li>
-      <li> <a href="#">Careers</a></li>
-    </ul>
-    <button class="request-invite-button">Request Invite</button>
-    <button class="dropdown-toggle"> <img src="./images/icon-hamburger.svg" alt="menu burger"> </button>
+  <header class="header">
+
+    <nav class="header__flex">
+      <a href="/" class="header__logo">
+        <img src="./images/logo.svg" alt="logo">
+      </a>
+
+      <a href="#" class="header__hamburguer">
+        <img src="./images/icon-hamburger.svg" alt="">
+      </a>
+
+      <div class="header__links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+
+      <button type="button" class="button header__cta">Request Invite</button>
+    </nav>
   </header>
+
+
   <!-- MAIN -->
   <main>
 
@@ -43,7 +57,7 @@
         <img src="./images/image-mockups.png" alt="mockup-image" class="mockup-image">
       </div>
     </section>
-     <!-- SECTION REASON -->
+    <!-- SECTION REASON -->
     <section class="reason">
       <div class="benefit">
         <h1> Why choose Easybank?</h1>
@@ -78,7 +92,7 @@
         </div>
       </div>
     </section>
-     <!-- SECTION LATEST ARTICLES -->
+    <!-- SECTION LATEST ARTICLES -->
     <section class="latest-articles">
       <h1>Latest Articles</h1>
       <div class="articles">
@@ -142,32 +156,31 @@
   </main>
   <!-- FOOTER -->
   <footer>
-    <div class="footer-one">
-      <div class="social-link">
-        <img src="./images/logo.svg" alt="logo">
-        <ul class="social-link-list">
-          <li> <a href="#facebook"></a><img src="./images/icon-facebook.svg" alt="facebook"></li>
-          <li> <a href="#youtube"></a><img src="./images/icon-youtube.svg" alt="youtube"></li>
-          <li> <a href="#twitter"></a><img src="./images/icon-twitter.svg" alt="twitter"></li>
-          <li> <a href="#pinterest"></a><img src="./images/icon-pinterest.svg" alt="pinterest"></li>
-        </ul>
-      </div>
-      <ul class="footer-navigation-1">
+
+    <div class="social-link">
+      <img src="./images/logo.svg" alt="logo">
+      <ul class="social-link-list">
+        <li> <a href="#facebook"></a><img src="./images/icon-facebook.svg" alt="facebook"></li>
+        <li> <a href="#youtube"></a><img src="./images/icon-youtube.svg" alt="youtube"></li>
+        <li> <a href="#twitter"></a><img src="./images/icon-twitter.svg" alt="twitter"></li>
+        <li> <a href="#pinterest"></a><img src="./images/icon-pinterest.svg" alt="pinterest"></li>
+      </ul>
+
+      <ul class="footer-navigation">
         <li> <a href="#about-us"></a>About us</li>
         <li> <a href="#contact"></a>Contact</li>
         <li> <a href="#blog"></a>Blog</li>
-      </ul>
-      <ul class="footer-navigation-2">
         <li> <a href="#careers"></a> Careers</li>
         <li> <a href="#support"></a> Support</li>
         <li> <a href="#privacy-policy"></a> Privacy Policy</li>
       </ul>
-    </div>
-    <div class="footer-two">
+
       <button class="request-invite-button">Request Invite</button>
       <h4> © Easybank. All Rights Reserved</h4>
     </div>
   </footer>
+
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
