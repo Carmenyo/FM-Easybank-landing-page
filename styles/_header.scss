@@ -1,19 +1,44 @@
-.header{
-
-    &__logo{
+.header {
+  &__logo {
     padding: 24px;
-    }
-    &__hamburguer{
-        padding: 24px;
-    }
-    &__links{
-     
-     a {
-         color: $GrayishBlue;
-         font-size: $font-size-small;
-     }
-       
+  }
+  &__hamburguer {
+    padding: 24px;
+    align-items: flex-end;
+  }
+  &__links {
+    margin-left: 5rem;
 
-    }
-    }
+    a {
+      position: relative;
+      color: $GrayishBlue;
+      font-size: $font-size-small;
+      margin-right: 3rem;
 
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 5px;
+        background: linear-gradient(
+          to right,
+          hsl(136, 65%, 51%),
+          hsl(192, 70%, 51%)
+        );
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        opacity: 0;
+        transition: 300ms ease-in-out;
+      }
+
+      &:hover {
+        color: $DarkBlue;
+        &::before {
+          opacity: 1;
+          transition: 300ms ease-in-out;
+        }
+      }
+    }
+  }
+}

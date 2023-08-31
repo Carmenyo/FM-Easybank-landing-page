@@ -35,8 +35,44 @@ a, a:visited, a:hover {
 }
 .header__hamburguer {
   padding: 24px;
+  align-items: flex-end;
+}
+.header__links {
+  margin-left: 5rem;
 }
 .header__links a {
+  position: relative;
   color: hsl(233, 8%, 62%);
   font-size: 0.85rem;
+  margin-right: 3rem;
+}
+.header__links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  opacity: 0;
+  transition: 300ms ease-in-out;
+}
+.header__links a:hover {
+  color: hsl(233, 26%, 24%);
+}
+.header__links a:hover::before {
+  opacity: 1;
+  transition: 300ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .header__links {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .header__hamburguer {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
