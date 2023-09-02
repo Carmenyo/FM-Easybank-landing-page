@@ -12,23 +12,34 @@ body {
     color: $DarkBlue;
 }
 
+// HEADER
 .hero {
   
     text-align: center;
     
+    &__wrapper{
+        padding: 1rem;
+    }
+
+    &__image{
+        border: red 2px solid;
+        height: 300px;
+        background-image: url(../images/image-mockups.png), url(../images/bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 375px;
+        margin: 0 -1.5rem ;
+    }
 
     &__title{
-        // borrar el margin después
-       margin-top: 23rem;
-
        font-size: 2.4rem;
+       margin-bottom: 1.2rem;
     }
 
     &__paragraph{
-        padding: 1rem;
         font-size: .9rem;
         line-height: 1.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         color: $GrayishBlue;
     }
 
@@ -41,6 +52,8 @@ body {
     font-size: .9rem;
 }
 }
+
+
 
 
 
