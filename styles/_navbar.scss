@@ -1,0 +1,16 @@
+.header {
+  &__nav {
+    margin-top: 1.5rem;
+    padding: 0rem 1.5rem  ;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__hamburger{
+    width: 40px;
+    background: url(../images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: -10px;
+  }
+}

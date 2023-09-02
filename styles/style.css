@@ -10,6 +10,20 @@ body {
   color: hsl(233, 26%, 24%);
 }
 
+.header__nav {
+  margin-top: 1.5rem;
+  padding: 0rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header__hamburger {
+  width: 40px;
+  background: url(../images/icon-hamburger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: -10px;
+}
+
 .hero {
   text-align: center;
 }
@@ -26,6 +40,7 @@ body {
 }
 .hero__title {
   font-size: 2.4rem;
+  margin-top: 1.5rem;
   margin-bottom: 1.2rem;
 }
 .hero__paragraph {
@@ -41,4 +56,38 @@ body {
   border: none;
   color: hsl(0, 0%, 100%);
   font-size: 0.9rem;
+}
+
+.why {
+  margin-top: 6rem;
+  padding-top: 2rem;
+  background-color: hsl(220, 16%, 96%);
+  text-align: center;
+}
+.why__title {
+  padding: 0.1rem 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.why__paragraph {
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.why__list {
+  border: 2px red solid;
+  margin-top: 2rem;
+}
+.why__list--title {
+  margin-top: 1.5rem;
+  padding: 0.1rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.why__list--paragraph {
+  margin-top: 1.5rem;
+  padding: 0 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.7rem;
 }/*# sourceMappingURL=style.css.map */
