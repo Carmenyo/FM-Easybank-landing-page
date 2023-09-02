@@ -1,9 +1,46 @@
 @import "variables";
-@import "global";
-@import "header";
-@import "mixins";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-size:$font-size ;
+    font-family: $font-family;
+    color: $DarkBlue;
+}
+
+.hero {
+  
+    text-align: center;
+    
+
+    &__title{
+        // borrar el margin después
+       margin-top: 23rem;
+
+       font-size: 2.4rem;
+    }
+
+    &__paragraph{
+        padding: 1rem;
+        font-size: .9rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+        color: $GrayishBlue;
+    }
+
+    &__button{
+    padding: 1rem 2.2rem;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%) );
+    border-radius: 1.5rem;
+    border: none;
+    color: $White;
+    font-size: .9rem;
+}
+}
 
 
 
