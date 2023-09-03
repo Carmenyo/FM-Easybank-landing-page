@@ -1,0 +1,50 @@
+.footer {
+  padding-top: 2.5rem;
+  background-color: $DarkBlue;
+  color: $VeryLightGray;
+  align-items: center;
+  text-align: center;
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    &--icon {
+      width: 25px;
+    }
+  }
+  &__nav {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    font-size: 0.9rem;
+
+    &--item {
+      color: $White;
+    }
+  }
+
+  &__button {
+    margin-top: 2rem;
+    padding: 1rem 2.2rem;
+    background: linear-gradient(
+      to right,
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+    );
+    border-radius: 1.5rem;
+    border: none;
+    color: $White;
+    font-size: 0.9rem;
+  }
+
+  &__copyrigth{
+    font-size: .9rem;
+    font-weight: 100;
+    padding: 2rem;
+    color:$GrayishBlue;
+  }
+}
