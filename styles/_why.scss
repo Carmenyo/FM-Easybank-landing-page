@@ -4,34 +4,72 @@
   background-color: $LightGrayishBlue;
   text-align: center;
   padding-bottom: 2rem;
- 
-  &__title{
+
+  &__title {
     padding: 0.1rem 2rem;
     font-size: 2rem;
     font-weight: 300;
-    
   }
-  &__paragraph{
+  &__paragraph {
     padding: 1.2rem;
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 1.5rem;
   }
- 
-  &__list{
+
+  &__list {
     margin-top: 2rem;
 
-    &--title{
-    margin-top: 1.5rem;
-    padding: 0.1rem 1rem;
-    font-size: 1.2rem;
-    font-weight: 500;
+    &--title {
+      margin-top: 1.5rem;
+      padding: 0.1rem 1rem;
+      font-size: 1.2rem;
+      font-weight: 500;
     }
-    &--paragraph{
-        margin-top: 1.5rem;
-        padding: 0 1.2rem;
-        font-size: .9rem;
-        line-height: 1.5rem;
-        margin-bottom: 1.7rem;
+    &--paragraph {
+      margin-top: 1.5rem;
+      padding: 0 1.2rem;
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+      margin-bottom: 1.7rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: -6rem;
+    padding-top: 2rem;
+
+    &__benefit {
+      text-align: left;
+      padding-left: 4rem;
+    }
+    &__title {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    &__paragraph {
+      padding-left: 2rem;
+      width: 35rem;
+      color: $GrayishBlue;
+    }
+
+    &__list {
+      display: flex;
+      text-align: left;
+      padding-left: 4rem;
+
+      &--item{
+        padding: 1rem ;
+      }
+
+      &--image {
+        margin-left: 1rem;
+      }
+
+      &--title{
+        color: $DarkBlue ;
+        font-weight: 600;
+       
+      }
     }
   }
 }

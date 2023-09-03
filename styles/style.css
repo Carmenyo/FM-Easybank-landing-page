@@ -30,9 +30,12 @@ a {
 
 .hero {
   text-align: center;
+  background-color: hsl(0, 0%, 98%);
 }
 .hero__wrapper {
   padding: 1rem;
+  max-width: 1115px;
+  margin: auto;
 }
 .hero__image {
   height: 300px;
@@ -60,6 +63,33 @@ a {
   border: none;
   color: hsl(0, 0%, 100%);
   font-size: 0.9rem;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    text-align: left;
+  }
+  .hero__container {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-areas: "description image";
+    min-height: 650px;
+    align-items: center;
+  }
+  .hero__image {
+    grid-area: image;
+    min-height: inherit;
+    background-size: 580px;
+  }
+  .hero__title {
+    margin-top: 5rem;
+    font-weight: lighter;
+    font-size: 3.5rem;
+  }
+  .hero__paragraph {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-top: 2.5rem;
+  }
 }
 
 .why {
@@ -94,6 +124,40 @@ a {
   font-size: 0.9rem;
   line-height: 1.5rem;
   margin-bottom: 1.7rem;
+}
+@media screen and (min-width: 768px) {
+  .why {
+    margin-top: -6rem;
+    padding-top: 2rem;
+  }
+  .why__benefit {
+    text-align: left;
+    padding-left: 4rem;
+  }
+  .why__title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .why__paragraph {
+    padding-left: 2rem;
+    width: 35rem;
+    color: hsl(233, 8%, 62%);
+  }
+  .why__list {
+    display: flex;
+    text-align: left;
+    padding-left: 4rem;
+  }
+  .why__list--item {
+    padding: 1rem;
+  }
+  .why__list--image {
+    margin-left: 1rem;
+  }
+  .why__list--title {
+    color: hsl(233, 26%, 24%);
+    font-weight: 600;
+  }
 }
 
 .blog {
@@ -168,7 +232,7 @@ a {
   font-size: 0.9rem;
 }
 .footer__nav--item {
-  color: hsl(0, 0%, 100%);
+  color: hsl(220, 16%, 96%);
 }
 .footer__button {
   margin-top: 2rem;

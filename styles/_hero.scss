@@ -1,39 +1,79 @@
 .hero {
-    text-align: center;
-    
-    &__wrapper{
-        padding: 1rem;
-    }
+  text-align: center;
+  background-color: $VeryLightGray;
 
-    &__image{
-        height: 300px;
-        background-image: url(../images/image-mockups.png), url(../images/bg-intro-mobile.svg);
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        background-size: 345px;
-        margin: 0 -1.5rem ;
-    }
+  &__wrapper {
+    padding: 1rem;
+    max-width: 1115px;
+    margin: auto;
+  }
 
-    &__title{
-       font-size: 2.4rem;
-       margin-top: 1.5rem;
-       margin-bottom: 1.2rem;
-    }
+  &__image {
+    height: 300px;
+    background-image: url(../images/image-mockups.png),
+      url(../images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 345px;
+    margin: 0 -1.5rem;
+  }
 
-    &__paragraph{
-        font-size: .9rem;
-        line-height: 1.5rem;
-        margin-bottom: 2rem;
-        color: $GrayishBlue;
-    }
+  &__title {
+    font-size: 2.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
 
-    &__button{
+  &__paragraph {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    color: $GrayishBlue;
+  }
+
+  &__button {
     padding: 1rem 2.2rem;
-    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%) );
+    background: linear-gradient(
+      to right,
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+    );
     border-radius: 1.5rem;
     border: none;
     color: $White;
-    font-size: .9rem;
-}
-}
+    font-size: 0.9rem;
+  }
 
+  @media screen and (min-width: 768px) {
+    text-align: left;
+
+    &__container {
+      display: grid;
+      grid-template-columns: 500px 1fr;
+      grid-template-areas: "description image";
+      min-height: 650px;
+      align-items: center;
+    }
+
+    &__image {
+      grid-area: image;
+      min-height: inherit;
+      background-size: 580px;
+    }
+
+    &__description {
+       }
+    &__title{
+        margin-top: 5rem;
+        font-weight: lighter;
+        font-size: 3.5rem;
+    }
+
+    &__paragraph{
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin-top: 2.5rem;
+    }
+
+  }
+}
