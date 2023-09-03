@@ -46,4 +46,21 @@
       color: $GrayishBlue;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    &__title {
+      text-align: left;
+      margin-left: 4rem;
+      font-weight: 500;
+    }
+
+    &__articles {
+      padding-left: 4rem;
+      display: flex;
+
+      &--container {
+        padding: 1rem;
+      }
+    }
+  }
 }

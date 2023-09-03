@@ -47,4 +47,12 @@
     padding: 2rem;
     color:$GrayishBlue;
   }
+
+  @media screen and (min-width: 768px){
+&__wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+
+  }
 }
