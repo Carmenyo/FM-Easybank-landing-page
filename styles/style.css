@@ -63,6 +63,7 @@ body {
   padding-top: 2rem;
   background-color: hsl(220, 16%, 96%);
   text-align: center;
+  padding-bottom: 2rem;
 }
 .why__title {
   padding: 0.1rem 2rem;
@@ -75,7 +76,6 @@ body {
   line-height: 1.5rem;
 }
 .why__list {
-  border: 2px red solid;
   margin-top: 2rem;
 }
 .why__list--title {
@@ -90,4 +90,51 @@ body {
   font-size: 0.9rem;
   line-height: 1.5rem;
   margin-bottom: 1.7rem;
+}
+
+.blog {
+  padding: 0 1rem;
+  color: hsl(233, 26%, 24%);
+  background-color: hsl(0, 0%, 100%);
+}
+.blog__title {
+  text-align: center;
+  padding: 5.5rem 0rem 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.blog__articles {
+  display: grid;
+  gap: 2rem;
+}
+.blog__articles--card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.blog__articles--img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.blog__articles--container {
+  padding: 1rem 2.3rem;
+}
+.blog__articles--author {
+  font-size: 0.6rem;
+  color: hsl(233, 8%, 62%);
+}
+.blog__articles--title {
+  margin-top: 0.5rem;
+  font-size: 0.97rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+.blog__articles--paragraph {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  margin-bottom: 1rem;
+  color: hsl(233, 8%, 62%);
 }/*# sourceMappingURL=style.css.map */

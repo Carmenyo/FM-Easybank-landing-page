@@ -1,0 +1,48 @@
+.blog {
+  padding: 0 1rem;
+  color: $DarkBlue;
+  background-color: $White;
+
+  &__title {
+    text-align: center;
+    padding: 5.5rem 0rem 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  &__articles {
+    display: grid;
+    gap: 2rem;
+
+    &--card {
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+    &--img {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    &--container {
+      padding: 1rem 2.3rem;
+    }
+    &--author {
+      font-size: 0.6rem;
+      color: $GrayishBlue;
+    }
+    &--title {
+      margin-top: 0.5rem;
+      font-size: 0.97rem;
+      font-weight: 500;
+      line-height: 1.3rem;
+    }
+    &--paragraph {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      line-height: 1.1rem;
+      margin-bottom: 1rem;
+      color: $GrayishBlue;
+    }
+  }
+}
