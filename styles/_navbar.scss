@@ -1,46 +1,56 @@
 .header {
-  &__nav {
-    margin-top: 1.5rem;
-    padding: 0rem 1.5rem  ;
+  display: flex;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+
+  &__wrapper {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
   }
 
-  &__hamburger{
+  &__button {
+    margin: 1rem;
+    padding: 1rem 2.2rem;
+    background: linear-gradient(
+      to right,
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+    );
+    border-radius: 1.5rem;
+    border: none;
+    color: $White;
+    font-size: 0.9rem;
+  }
+
+  &__hamburger {
     width: 40px;
     background: url(../images/icon-hamburger.svg);
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: -10px;
   }
-    &__button {
-      padding: 1rem 2.2rem;
-      background: linear-gradient(
-        to right,
-        hsl(136, 65%, 51%),
-        hsl(192, 70%, 51%)
-      );
-      border-radius: 1.5rem;
-      border: none;
-      color: $White;
-      font-size: 0.9rem;
-    }
-  
+  &__menu {
+    border: red 2px solid;
+    width: 50%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    color: $GrayishBlue;
+  }
 
-  @media screen and (min-width:768px) {
+  &__logo {
+    align-self: center;
+  }
 
-    &__container{
-      border: 2px red solid;
+  @media screen and (min-width: 768px) {
+    &__container {
+      width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
     }
-    &__logo{
-      align-self: center;
+
+    &__hamburger {
+      display: none;
     }
-    &__menu{
-      display: flex;
-      list-style: none;
-    }
-    
   }
 }
