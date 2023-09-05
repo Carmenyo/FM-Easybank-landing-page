@@ -3,7 +3,6 @@
   background-color: $VeryLightGray;
 
   &__wrapper {
-    padding: 1rem;
     max-width: 1115px;
     margin: auto;
   }
@@ -15,17 +14,18 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 345px;
-    margin: 0 -1.5rem;
   }
 
   &__title {
     font-size: 2.4rem;
+    font-weight: 100;
     margin-top: 1.5rem;
     margin-bottom: 1.2rem;
-    text-align: left;
+  
   }
 
   &__paragraph {
+    padding: 0 1rem;
     font-size: 0.9rem;
     line-height: 1.5rem;
     margin-bottom: 2rem;

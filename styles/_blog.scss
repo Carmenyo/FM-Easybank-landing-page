@@ -27,16 +27,19 @@
     }
     &--container {
       padding: 1rem 2.3rem;
+      text-align: left;
     }
     &--author {
       font-size: 0.6rem;
       color: $GrayishBlue;
     }
     &--title {
+      margin-left: .4rem;
       margin-top: 0.5rem;
       font-size: 0.97rem;
       font-weight: 500;
       line-height: 1.3rem;
+      
     }
     &--paragraph {
       margin-top: 0.5rem;
@@ -44,6 +47,8 @@
       line-height: 1.1rem;
       margin-bottom: 1rem;
       color: $GrayishBlue;
+      
+
     }
   }
 

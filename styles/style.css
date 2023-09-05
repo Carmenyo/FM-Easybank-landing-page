@@ -82,7 +82,6 @@ a {
   background-color: hsl(0, 0%, 98%);
 }
 .hero__wrapper {
-  padding: 1rem;
   max-width: 1115px;
   margin: auto;
 }
@@ -92,15 +91,15 @@ a {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 345px;
-  margin: 0 -1.5rem;
 }
 .hero__title {
   font-size: 2.4rem;
+  font-weight: 100;
   margin-top: 1.5rem;
   margin-bottom: 1.2rem;
-  text-align: left;
 }
 .hero__paragraph {
+  padding: 0 1rem;
   font-size: 0.9rem;
   line-height: 1.5rem;
   margin-bottom: 2rem;
@@ -149,7 +148,7 @@ a {
 }
 
 .why {
-  margin-top: 6rem;
+  margin-top: 7rem;
   padding-top: 2rem;
   background-color: hsl(220, 16%, 96%);
   text-align: center;
@@ -245,12 +244,14 @@ a {
 }
 .blog__articles--container {
   padding: 1rem 2.3rem;
+  text-align: left;
 }
 .blog__articles--author {
   font-size: 0.6rem;
   color: hsl(233, 8%, 62%);
 }
 .blog__articles--title {
+  margin-left: 0.4rem;
   margin-top: 0.5rem;
   font-size: 0.97rem;
   font-weight: 500;
