@@ -34,12 +34,11 @@
       color: $GrayishBlue;
     }
     &--title {
-      margin-left: .4rem;
+      margin-left: 0.4rem;
       margin-top: 0.5rem;
       font-size: 0.97rem;
       font-weight: 500;
       line-height: 1.3rem;
-      
     }
     &--paragraph {
       margin-top: 0.5rem;
@@ -47,24 +46,31 @@
       line-height: 1.1rem;
       margin-bottom: 1rem;
       color: $GrayishBlue;
-      
-
     }
   }
 
   @media screen and (min-width: 768px) {
+    padding: 1.8rem 6.8rem 0 6rem;
+    margin-bottom: 4.5rem;
+
     &__title {
+      font-size: 2.5rem;
       text-align: left;
       margin-left: 4rem;
-      font-weight: 500;
+      margin-bottom: 1rem;
     }
 
     &__articles {
       padding-left: 4rem;
       display: flex;
+      gap: 1rem;
 
       &--container {
         padding: 1rem;
+      }
+
+      &--title {
+        padding: 0 2.3rem 0 0;
       }
     }
   }
