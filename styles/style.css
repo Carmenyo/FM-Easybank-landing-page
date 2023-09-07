@@ -167,6 +167,9 @@ a {
 .why__list {
   margin-top: 2rem;
 }
+.why__list--image {
+  margin-left: 1rem;
+}
 .why__list--title {
   margin-top: 1.5rem;
   padding: 0.1rem 1rem;
@@ -225,7 +228,7 @@ a {
   padding: 0 1rem;
   color: hsl(233, 26%, 24%);
   background-color: hsl(0, 0%, 100%);
-  margin-bottom: 6rem;
+  margin-bottom: 5.5rem;
 }
 .blog__title {
   text-align: center;
@@ -235,7 +238,7 @@ a {
 }
 .blog__articles {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
 }
 .blog__articles--card {
   border-radius: 0.5rem;
@@ -246,7 +249,6 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
-  margin-bottom: 0.5rem;
 }
 .blog__articles--container {
   padding: 1rem 2.3rem;
@@ -258,7 +260,7 @@ a {
 }
 .blog__articles--title {
   margin-left: 0.4rem;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
   font-size: 0.97rem;
   font-weight: 500;
   line-height: 1.3rem;
@@ -267,13 +269,13 @@ a {
   margin-top: 0.5rem;
   font-size: 0.8rem;
   line-height: 1.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: hsl(233, 8%, 62%);
 }
 @media screen and (min-width: 768px) {
   .blog {
     padding: 1.8rem 6.8rem 0 6rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.6rem;
   }
   .blog__title {
     font-size: 2.5rem;
@@ -305,7 +307,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 .footer__social--icon {
   width: 25px;
@@ -321,7 +323,7 @@ a {
   color: hsl(220, 16%, 96%);
 }
 .footer__button {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   padding: 1rem 2.2rem;
   background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
   border-radius: 1.5rem;
@@ -332,12 +334,45 @@ a {
 .footer__copyrigth {
   font-size: 0.9rem;
   font-weight: 100;
-  padding: 2rem;
+  padding: 1.5rem;
   color: hsl(233, 8%, 62%);
 }
 @media screen and (min-width: 768px) {
   .footer__wrapper {
-    display: flex;
-    justify-content: space-around;
+    margin-left: 10rem;
+    display: grid;
+    grid-template-columns: 200px 1fr 400px;
+    grid-template-areas: "logo nav button" "social nav copyrigth";
+  }
+  .footer__nav {
+    grid-area: nav;
+    align-items: start;
+    align-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 0;
+  }
+  .footer__nav--item {
+    margin-top: -2rem;
+  }
+  .footer__logo {
+    margin-top: 2rem;
+    grid-area: logo;
+  }
+  .footer__social {
+    margin-top: 0.1rem;
+    margin-left: -3rem;
+    grid-area: social;
+  }
+  .footer__social--icon {
+    width: 20px;
+  }
+  .footer__button {
+    grid-area: button;
+    margin-bottom: 2rem;
+  }
+  .footer__copyrigth {
+    grid-area: copyrigth;
   }
 }/*# sourceMappingURL=style.css.map */

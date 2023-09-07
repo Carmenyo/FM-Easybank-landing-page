@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 
     &--icon {
       width: 25px;
@@ -26,9 +26,8 @@
       color: $LightGrayishBlue;
     }
   }
-
   &__button {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     padding: 1rem 2.2rem;
     background: linear-gradient(
       to right,
@@ -40,19 +39,60 @@
     color: $White;
     font-size: 0.9rem;
   }
-
   &__copyrigth{
     font-size: .9rem;
     font-weight: 100;
-    padding: 2rem;
+    padding: 1.5rem;
     color:$GrayishBlue;
+    
   }
 
   @media screen and (min-width: 768px){
 &__wrapper{
-  display: flex;
-  justify-content: space-around;
+  margin-left: 10rem;
+  display: grid;
+  grid-template-columns: 200px 1fr 400px;
+  grid-template-areas: "logo nav button"
+  "social nav copyrigth"
+  ;
+}
+&__nav{
+  grid-area: nav;
+  align-items: start;
+  align-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 0;
+
+  &--item{
+margin-top: -2rem;
+  }
+}
+
+&__logo{
+  margin-top: 2rem;
+  grid-area: logo;
+}
+&__social{
+  margin-top: 0.1rem;
+  margin-left: -3rem;
+  grid-area: social;
+
+  &--icon{
+    width: 20px;
+  }
+
+}
+&__button{
+grid-area: button;
+margin-bottom: 2rem;
+}
+&__copyrigth{
+  grid-area: copyrigth;
+
 }
 
   }
-}
+
+  }
